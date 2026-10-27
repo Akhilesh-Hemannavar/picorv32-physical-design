@@ -1,0 +1,38 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# Local generated artifacts
+runs/
+tmp/
+logs/
+cache/
+work/
+*.log
+*.vcd
+*.spice
+*.aux
+*.sv
+*.out
+*.db
+*.odb
+*.gds
+*.lef
+*.def
+*.spef
+*.sdf
+*.rpt
+
+# Keep only the final summary doc
+!results/
+!results/final/
+!results/final/reports/
+!results/final/reports/final_metrics.md

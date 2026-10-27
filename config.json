@@ -1,0 +1,14 @@
+{
+  "DESIGN_NAME": "picorv32",
+
+  "VERILOG_FILES": [
+    "dir::picorv32.v"
+  ],
+
+  "CLOCK_PORT": "clk",
+  "CLOCK_PERIOD": 20.0,
+
+  "FP_CORE_UTIL": 50,
+  "PL_TARGET_DENSITY_PCT": 50
+
+}
