@@ -79,7 +79,6 @@ The routing report records a reduction from 132 DRC errors in iteration 0 to zer
 ├── config.json
 ├── picorv32.v
 ├── picorv32.core
-├── sky130A.lyp
 ├── results/
 │   └── final/
 │       └── reports/
