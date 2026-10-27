@@ -92,17 +92,12 @@ The implementation follows this general sequence:
 
 ## Engineering Work
 
-The project includes hands-on physical-design analysis and implementation work involving:
-
-- Configuring the RTL-to-GDSII flow for SKY130A.
-- Evaluating floorplan area, placement utilization, and standard-cell statistics.
-- Inspecting clock buffers, fanout, and capacitance constraints.
-- Investigating clock-tree implementation and timing-repair buffering.
-- Tracking routing DRC violations across routing iterations.
-- Reviewing setup and hold timing across multiple timing corners.
-- Reviewing final layout and physical-verification reports.
-
-The recorded routing results show a reduction from 132 DRC errors in iteration 0 to zero in the final routing result.
+- Configured and ran the PicoRV32 RTL-to-GDSII flow using LibreLane and the SKY130A PDK, targeting a 20 ns clock period.
+- Tuned floorplanning parameters, including `FP_CORE_UTIL` and `PL_TARGET_DENSITY_PCT`, and reviewed their impact on placement and implementation.
+- Investigated clock-tree buffering, fanout, and capacitance constraints using OpenROAD timing and net reports.
+- Examined timing-repair buffering and clock-network implementation to understand electrical-design constraints.
+- Tracked routing DRC results across iterations, reducing reported violations from **132 in iteration 0 to zero in the final routing result**.
+- Reviewed final setup and hold timing reports, along with physical-verification results, across the evaluated timing corners.
 
 ## Final Implementation Artifacts
 
