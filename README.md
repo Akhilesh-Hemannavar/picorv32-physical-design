@@ -37,6 +37,31 @@ This project demonstrates an ASIC physical-design workflow from RTL synthesis th
 
 See [`results/final/reports/final_metrics.md`](results/final/reports/final_metrics.md) and the machine-readable metrics files for the recorded implementation data.
 
+
+## Timing Analysis
+
+The final implementation was evaluated against a **20 ns target clock period (50 MHz)**.
+
+| Timing Metric | Reported Result |
+|---|---:|
+| Target clock period | 20 ns |
+| Worst setup slack (WNS) | +0.741 ns |
+| Worst hold slack (WNS) | +0.109 ns |
+| Setup timing violations | 0 reported |
+| Hold timing violations | 0 reported |
+
+Both setup and hold worst slack are positive in the final reported results, indicating that the reported timing checks meet their constraints for the evaluated corners.
+
+### Timing and Metrics Files
+
+- [Final metrics summary](results/final/reports/final_metrics.md)
+- [Machine-readable metrics (CSV)](results/final/metrics.csv)
+- [Machine-readable metrics (JSON)](results/final/metrics.json)
+- [Final timing constraints (SDC)](results/final/sdc/picorv32.sdc)
+
+**Note:** The clock period is the target constraint, not a claim of measured maximum operating frequency. The reported slack values apply to the timing configuration and corners evaluated in this implementation run.
+
+
 ## Technology Stack
 
 | Stage | Tool / Technology |
